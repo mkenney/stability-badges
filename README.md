@@ -2,7 +2,7 @@
 SVG badges for and their definitions
 
 ## Badges
-Badges with node stability index descriptions slightly changed to remove the 'feature' references.
+Badges with project stability definitions.
 
 
 ### Work in progress
