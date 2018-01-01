@@ -1,8 +1,8 @@
 # stability-badges
-SVG badges for and their definitions
+
+Framework API stability badges and definitions.
 
 ## Badges
-Project stability badges and definitions.
 
 ### Work in progress
 [![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)](https://github.com/mkenney/stability-badges#work-in-progress)
