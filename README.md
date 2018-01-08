@@ -29,7 +29,7 @@ Framework API is new and may change or be removed in future versions. Please try
 ### Stable
 [![stability-stable](https://img.shields.io/badge/api-stable-yellow.svg)](https://github.com/mkenney/stability-badges#stable)
 
-The framework API is in the process of settling, but has not yet had sufficient real-world testing to be considered stable. Backwards-compatibility will be maintained if reasonable.
+The framework API is in the process of settling, but has not yet had sufficient real-world testing to be considered mature. Backwards-compatibility will be maintained if reasonable.
 
     [![stability-stable](https://img.shields.io/badge/api-stable-yellow.svg)](https://github.com/mkenney/stability-badges#stable)
 
