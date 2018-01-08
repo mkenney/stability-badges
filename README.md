@@ -1,6 +1,6 @@
 # stability-badges
 
-Framework API stability badges and definitions.
+Framework/API/Software stability badges and definitions.
 
 ## Badges
 
