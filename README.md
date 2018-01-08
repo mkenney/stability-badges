@@ -1,8 +1,6 @@
 # stability-badges
 
-Software stability badges and definitions.
-
-## Badges
+Software stability badges and their definitions.
 
 ### Work in progress
 [![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)](https://github.com/mkenney/stability-badges#work-in-progress)
