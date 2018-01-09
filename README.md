@@ -46,11 +46,11 @@ Code has been tested extensively in production and is unlikely to ever need to c
     [![stability-frozen](https://img.shields.io/badge/stability-frozen-0000CD.svg)](https://github.com/mkenney/stability-badges#frozen)
 
 ### Locked
-[![stability-locked](https://img.shields.io/badge/stability-locked-300030.svg)](https://github.com/mkenney/stability-badges#locked)
+[![stability-locked](https://img.shields.io/badge/stability-locked-4B0088.svg)](https://github.com/mkenney/stability-badges#locked)
 
 Code is complete. Unless serious bugs are found, this software will not ever change.
 
-    [![stability-locked](https://img.shields.io/badge/stability-locked-300030.svg)](https://github.com/mkenney/stability-badges#locked)
+    [![stability-locked](https://img.shields.io/badge/stability-locked-4B0088.svg)](https://github.com/mkenney/stability-badges#locked)
 
 ## Credits
 https://github.com/orangemug/stability-badges adapted for my own projects.
