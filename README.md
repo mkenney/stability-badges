@@ -25,32 +25,32 @@ Code is new and may change or be removed in future versions. Please try it out a
     [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/mkenney/stability-badges#experimental)
 
 ### Stable
-[![stability-stable](https://img.shields.io/badge/stability-stable-yellow.svg)](https://github.com/mkenney/stability-badges#stable)
+[![stability-stable](https://img.shields.io/badge/stability-stable-9370DB.svg)](https://github.com/mkenney/stability-badges#stable)
 
 Code is in the process of settling, but has not yet had sufficient real-world testing to be considered mature. Backwards-compatibility will be maintained if reasonable.
 
-    [![stability-stable](https://img.shields.io/badge/stability-stable-yellow.svg)](https://github.com/mkenney/stability-badges#stable)
+    [![stability-stable](https://img.shields.io/badge/stability-stable-9370DB.svg)](https://github.com/mkenney/stability-badges#stable)
 
 ### Mature
-[![stability-mature](https://img.shields.io/badge/stability-mature-green.svg)](https://github.com/mkenney/stability-badges#mature)
+[![stability-mature](https://img.shields.io/badge/stability-mature-brightgreen.svg)](https://github.com/mkenney/stability-badges#mature)
 
 Code has proven satisfactory, but cleanup in the underlying code may cause minor changes. Backwards-compatibility is guaranteed.
 
-    [![stability-mature](https://img.shields.io/badge/stability-mature-green.svg)](https://github.com/mkenney/stability-badges#mature)
+    [![stability-mature](https://img.shields.io/badge/stability-mature-brightgreen.svg)](https://github.com/mkenney/stability-badges#mature)
 
 ### Frozen
-[![stability-frozen](https://img.shields.io/badge/stability-frozen-brightgreen.svg)](https://github.com/mkenney/stability-badges#frozen)
+[![stability-frozen](https://img.shields.io/badge/stability-frozen-008000.svg)](https://github.com/mkenney/stability-badges#frozen)
 
 Code has been tested extensively in production and is unlikely to ever need to change.
 
-    [![stability-frozen](https://img.shields.io/badge/stability-frozen-brightgreen.svg)](https://github.com/mkenney/stability-badges#frozen)
+    [![stability-frozen](https://img.shields.io/badge/stability-frozen-008000.svg)](https://github.com/mkenney/stability-badges#frozen)
 
 ### Locked
-[![stability-locked](https://img.shields.io/badge/stability-locked-blue.svg)](https://github.com/mkenney/stability-badges#locked)
+[![stability-locked](https://img.shields.io/badge/stability-locked-000080.svg)](https://github.com/mkenney/stability-badges#locked)
 
 Code is complete. Unless serious bugs are found, this software will not ever change.
 
-    [![stability-locked](https://img.shields.io/badge/stability-locked-blue.svg)](https://github.com/mkenney/stability-badges#locked)
+    [![stability-locked](https://img.shields.io/badge/stability-locked-000080.svg)](https://github.com/mkenney/stability-badges#locked)
 
 ## Credits
 https://github.com/orangemug/stability-badges adapted for my own projects.
