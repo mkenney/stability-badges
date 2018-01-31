@@ -3,11 +3,11 @@
 Software stability badges and their definitions.
 
 ### Work in progress
-[![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)](https://github.com/mkenney/stability-badges#work-in-progress)
+[![stability-wip](https://img.shields.io/badge/stability-WIP-lightgrey.svg)](https://github.com/mkenney/stability-badges#work-in-progress)
 
 Code is a 'work in progress' and is not ready for public use.
 ```
-[![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)](https://github.com/mkenney/stability-badges#work-in-progress)
+[![stability-wip](https://img.shields.io/badge/stability-WIP-lightgrey.svg)](https://github.com/mkenney/stability-badges#work-in-progress)
 ```
 
 
