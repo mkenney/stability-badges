@@ -1,4 +1,4 @@
-Also: [Production checklist](PROD-CHECKLIST.md)
+Also: [Productionisation checklist](PROD-CHECKLIST.md)
 
 # stability-badges
 
@@ -44,6 +44,8 @@ Code is functional but volatile and prone to breaking changes. Feature developme
 [![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg)](https://github.com/mkenney/stability-badges#beta)
 
 Code is in the process of settling, but has not yet had sufficient real-world testing to be considered mature. Backwards-compatibility will be maintained if reasonable.
+
+See also, the [productionisation checklist](PROD-CHECKLIST.md).
 
 ```
 [![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg)](https://github.com/mkenney/stability-badges#beta)
