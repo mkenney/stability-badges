@@ -78,4 +78,6 @@ This is a checklist things to think about when [productionizing software](https:
 - [ ] Private services are not accessible outside their private network.
 - [ ] A reasonable timeout is defined for all network requests.
 
+#
+
 _[inspiration](https://github.com/bahlo/go-production-checklist)_
