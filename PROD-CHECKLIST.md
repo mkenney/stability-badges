@@ -7,16 +7,15 @@ This is a checklist for software being prepared for use in production environmen
   * For services, all vendor dependencies should be checked in to code repository.
   * For libraries, only dependency configuration and lock files should be checked in.
 - [ ] Logger is configured to output structured logs to support forensic analysys and metric gathering (ELK, etc.).
-- [ ] A reasonable timeout is configured for all network requests.
 - [ ] All file / network handlers are explicitly closed immediately when no longer needed.
 
 ### Middleware
-- [ ] Implement circuit breakers if appropriate.
-- [ ] Implement rate-limiting if appropriate.
-- [ ] Implement request-body size limits if appropriate.
+- [ ] Circuit breakers are available if appropriate.
+- [ ] Rate-limiting is implemented if appropriate.
+- [ ] Request-body size limits are implemented if appropriate.
 - [ ] Sensible metric recording is implemented (error-rate, response-time, etc.). A [prometheus](https://prometheus.io/) endpoint is ideal.
 
-### Language specifics
+### Language specific:
 #### Golang
 - [ ] Services are compiled with `-buildmode=pie`
   * https://en.wikipedia.org/wiki/Address_space_layout_randomization
@@ -51,6 +50,7 @@ This is a checklist for software being prepared for use in production environmen
 ### Network
 - [ ] SSL is properly configured (validate with [SSL Labs](https://www.ssllabs.com/)).
 - [ ] Private services are only accessible via the private network.
+- [ ] A reasonable timeout is configured for all network requests.
 
 #
 
