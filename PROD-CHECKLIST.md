@@ -52,7 +52,7 @@ This is a checklist things to think about when [productionizing software](https:
 ## Services
 ### APIs
 - [ ] CORS is properly configured.
-- [ ] Uniform response data models are enforced.
+- [ ] Uniform response data models are enforced across all endpoints.
 
 ## Devops
 ### Docker
@@ -67,16 +67,15 @@ This is a checklist things to think about when [productionizing software](https:
 ### Helm
 - [ ] ...
 
+### Network
+- [ ] SSL is properly configured.
+- [ ] Private services are not accessible outside their private network.
+- [ ] A reasonable timeout is defined for all incoming and outgoing network requests.
+
 ## Deployment
-### Preparation
 - [ ] Verify all production configurations are valid and correct.
 - [ ] Service is load-tested and/or benchmarked and a scaling method is defined.
 - [ ] All build dependencies should be available (cached, hosted, etc.) within the build environment so 3rd party outages do not prevent successful builds.
-
-### Network
-- [ ] SSL is properly configured (validate with [SSL Labs](https://www.ssllabs.com/)).
-- [ ] Private services are not accessible outside their private network.
-- [ ] A reasonable timeout is defined for all network requests.
 
 #
 
