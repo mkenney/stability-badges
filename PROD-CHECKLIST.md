@@ -21,12 +21,12 @@ Checklist things to think about when [productionizing software](https://en.wikip
 - [ ] Dependencies are managed and versioned using a dependency management tool such as [`dep`](https://github.com/golang/dep), [`composer`](https://getcomposer.org/), [`npm`](https://www.npmjs.com/), etc.
   * For services, all vendor dependencies should be checked into the code repository.
   * For shared libraries, only dependency configuration and lock files should be checked in.
-- [ ] Logger is configured to output structured logs to support forensic analysys and metric gathering (ELK, etc.).
+- [ ] Logging is configured to output structured logs to support forensic analysys and metric gathering (ELK, etc.).
 - [ ] All file / network handlers are explicitly closed immediately when no longer needed.
 - [ ] Garbage collection concerns are handled appropriately:
   * object references are not cached unnecessarily
   * event loops release object references at the _end_ of each iteration
-  * local storage is minimal and contains only application data
+  * local storage usage is minimal and only contains application data
   * limits exist for number of cached route changes
   * etc.
 
