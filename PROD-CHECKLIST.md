@@ -1,6 +1,6 @@
 # Productionisation Checklist
 
-Checklist things to think about when [productionizing](https://en.wikipedia.org/wiki/Productionisation) software.
+Checklist things to think about when [productionizing](https://en.wikipedia.org/wiki/Productionisation) a piece of software.
 
 ## Documentation
 
