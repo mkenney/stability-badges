@@ -52,11 +52,11 @@ This is a checklist things to think about when [productionizing software](https:
 ## Services
 ### APIs
 - [ ] CORS is properly configured.
-- [ ] API response data models a uniform output format.
+- [ ] Uniform response data models are enforced.
 
 ## Devops
 ### Docker
-- [ ] A multi-stage `Dockerfile` is used to produce the most minimal image possible (within reason).
+- [ ] A multi-stage `Dockerfile` is used to produce minimal images.
 - [ ] Images do not include software or packages not required for the service to function (`vim`, `ssh`, etc.).
 
 ### Kubernetes
@@ -69,13 +69,13 @@ This is a checklist things to think about when [productionizing software](https:
 
 ## Deployment
 ### Preparation
-- [ ] Verify the production configuration is valid and correct.
-- [ ] Service is load-tested and/or benchmarked.
+- [ ] Verify all production configurations are valid and correct.
+- [ ] Service is load-tested and/or benchmarked and a scaling method is defined.
 - [ ] All build dependencies should be available (cached, hosted, etc.) within the build environment so 3rd party outages do not prevent successful builds.
 
 ### Network
 - [ ] SSL is properly configured (validate with [SSL Labs](https://www.ssllabs.com/)).
-- [ ] Private services are only accessible via the private network.
-- [ ] A reasonable timeout is configured for all network requests.
+- [ ] Private services are not accessible outside their private network.
+- [ ] A reasonable timeout is defined for all network requests.
 
 _[inspiration](https://github.com/bahlo/go-production-checklist)_
