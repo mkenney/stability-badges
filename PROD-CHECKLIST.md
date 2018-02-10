@@ -1,38 +1,57 @@
 # Production Checklist
 
-This is a checklist for software going into a production environment. Inspired by https://github.com/bahlo/go-production-checklist.
-
-## Startup and shutdown
-- [ ] Exit early (`panic`) on fatal errors (e.g. database not found or configuration invalid).
-- [ ] Migrate your database on startup.
-- [ ] Graceful-shutdown is implemented / handled.
+This is a checklist for software being prepared for use in production environments.
 
 ## Code
-- [ ] Use a tool ([Dep](https://github.com/golang/dep), [Composer](https://getcomposer.org/), [NPM](https://www.npmjs.com/), etc.) to manage project dependencies. Dependencies should be checked in to service repositories, libraries should only incldue the dependency configuration and lock files.
-- [ ] Logger is configured to output outputs machine-readable logs, to be processed later (e.g. with ELK).
-- [ ] A reasonable timeout is configures for all external request (HTTP, RPC, etc.).
-- [ ] All file / network handlers are explicitly closed.
+- [ ] Dependencies are managed and versioned using a dependency management tool such as [`dep`](https://github.com/golang/dep), [`composer`](https://getcomposer.org/), [`npm`](https://www.npmjs.com/), etc.
+  * For services, all vendor dependencies should be checked in to code repository.
+  * For libraries, only dependency configuration and lock files should be checked in.
+- [ ] Logger is configured to output structured logs to support forensic analysys and metric gathering (ELK, etc.).
+- [ ] A reasonable timeout is configured for all network requests.
+- [ ] All file / network handlers are explicitly closed immediately when no longer needed.
 
-## Middleware
-- [ ] Implement circuit breaker if needed.
-- [ ] Implement rate-limiting if needed.
-- [ ] Set up sensible metrics (error-rate, response-time, etc.). A [prometheus](https://prometheus.io/) endpoint is ideal.
-- [ ] Enforce body-size-limits if appropriate.
+### Middleware
+- [ ] Implement circuit breakers if appropriate.
+- [ ] Implement rate-limiting if appropriate.
+- [ ] Implement request-body size limits if appropriate.
+- [ ] Sensible metric recording is implemented (error-rate, response-time, etc.). A [prometheus](https://prometheus.io/) endpoint is ideal.
 
-## Preparation
-- [ ] Service is load-tested and/or benchmarked.
-- [ ] Verify that your production configuration is valid (this should be the only thing different to staging, so make sure it’s correct).
+### Language specifics
+#### Golang
+- [ ] Services are compiled with `-buildmode=pie`
+  * https://en.wikipedia.org/wiki/Address_space_layout_randomization
+  * https://access.redhat.com/blogs/766093/posts/1975793
+  * https://eklitzke.org/position-independent-executables
 
-## Deployment
+## Daemons
+### Startup and shutdown
+- [ ] Exit early and loudly (`panic`, etc.) when a unrecoverable error occurs (database not found, invalid system configuration, etc.).
+- [ ] Signals are caught and handled, graceful-shutdown is implemented.
 
-### Docker / k8s
-- [ ] Use a minimal multi-stage `Dockerfile`.
+## Services
+### APIs
+- [ ] CORS is properly configured.
+- [ ] API response data models a uniform output format.
+
+## Devops
+### Docker
+- [ ] A multi-stage `Dockerfile` is used to produce the most minimal image possible (within reason).
+- [ ] Docker image does not include software or packages not required for the service to function (`vim`, etc.).
 
 ### Kubernetes
+- [ ] Liveness and readiness checks are configured.
+- [ ] Horizontal pod autoscalling is defined appropriately.
 
-
-### Golang
-- [ ] Compile your service(s) w/ `-buildmode=pie` (position independent executables).
+## Deployment
+### Preparation
+- [ ] Verify the production configuration is valid and correct.
+- [ ] Service is load-tested and/or benchmarked.
+- [ ] All build dependencies should be available (cached, hosted, etc.) within the build environment so 3rd party outages do not prevent successful builds.
 
 ### Network
-- [ ] SSL is configured to get an A+ on [SSL Labs](https://www.ssllabs.com/).
+- [ ] SSL is properly configured (validate with [SSL Labs](https://www.ssllabs.com/)).
+- [ ] Private services are only accessible via the private network.
+
+#
+
+_[inspiration](https://github.com/bahlo/go-production-checklist)_
